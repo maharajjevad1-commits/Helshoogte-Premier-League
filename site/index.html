@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="hpl-readonly" content="false"><title>HPL | Helshoogte Premier League</title><link rel="stylesheet" href="styles.css"></head>
+<body><div class="topline"></div><header class="hero"><div class="hero-in"><div class="brand-logo" aria-label="Helshoogte emblem">Helshoogte emblem</div><div class="hero-brandstack"><div class="kicker">HELSHOOGTE · STELLENBOSCH</div><h1>Helshoogte Premier League</h1><img class="hpl-wordmark" src="assets/ee29015b1a59f4d4.png" alt="Helshoogte logo"><p>🏆 <span id="season-label">Season 1</span> &nbsp;·&nbsp; Official residence cricket hub</p></div><div class="hero-actions" id="admin-controls"><button class="btn ghost hidden" id="admin-toggle" type="button">🔐 Admin Mode</button></div></div></header>
+<div class="navarea"><nav class="navbar wrap" aria-label="Site navigation"><button class="nav-btn active" data-nav="home">⌂ Overview</button><button class="nav-btn" data-nav="table">🏆 League Table</button><button class="nav-btn" data-nav="fixtures">📅 Fixtures & Results</button><button class="nav-btn" data-nav="teams">🛡 Teams & Squads</button><button class="nav-btn" data-nav="stats">📊 Player Stats</button><button class="nav-btn" data-nav="awards">✨ Awards</button><button class="nav-btn" data-nav="news">📰 HPL News</button><div class="nav-spacer"></div><span class="pill top">PUBLIC STATS</span></nav></div>
+<main class="main wrap"><div id="public-content"></div><section id="admin-panel" class="hidden"></section></main><div id="modal-root"></div><div id="toast"></div><footer class="footer"><img src="assets/ee29015b1a59f4d4.png" alt="Helshoogte logo" style="height:42px;max-width:260px;object-fit:contain;margin-bottom:8px"><br><strong style="color:white">HELSHOOGTE PREMIER LEAGUE</strong><br>Residence cricket · Built for the game · 🏏<br><span class="micro">League results, player information and statistics are managed by the HPL organising committee.</span></footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="seed.js"></script>
+<script src="public.js"></script>
+<script src="cloud.js"></script>
+<script src="admin.js"></script>
+</body></html>
