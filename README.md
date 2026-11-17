@@ -50,3 +50,11 @@ Local preview on Windows: run `scripts/preview.ps1` in PowerShell. It serves the
 Optional maintainer checks: `node scripts/check.mjs` on Node 18+. These use only Node's built-in libraries; installing Node is not necessary for visitors, admins, or publishing the site.
 
 Verified during setup: cricket totals, overs and NRR, corrected scores, visitor-save blocking, stale-save protection, failed-save recovery, and database scorecard round trips in rolled-back test transactions.
+
+## Responsive design and accessibility
+
+`site/accessibility.css` defines opaque card backgrounds, contrasting text, visible keyboard focus, mobile wrapping, touch targets, reduced-motion and forced-colour support. `site/accessibility.js` connects dynamically generated form labels/help, identifies table captions and column headers, announces save messages, and uses native modal dialogs with focus containment and restoration. Both the league site and password setup page include a skip link.
+
+Verified at 320px mobile, 768px tablet, and 1280px desktop widths. Public pages and admin forms fit without whole-page horizontal scrolling; data tables scroll inside labelled, keyboard-focusable regions. Inspected text pairs met the WCAG AA contrast targets (4.5:1 for normal text; 3:1 for large text), including profiles and password setup. Keyboard dialog checks covered Tab, Escape, and focus restoration. Admin checks used disposable local fixtures with saving disabled, without changing production records.
+
+This is a focused browser/contrast review, not a formal WCAG conformance certification or a complete assistive-technology audit. Recheck new content, future UI changes, and any text embedded in uploaded images.
