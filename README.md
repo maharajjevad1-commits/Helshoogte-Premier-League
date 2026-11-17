@@ -39,7 +39,7 @@ Player photos and new logos are compressed to JPEG and uploaded to the existing 
 - **Records:** Admin → Settings & Backup → Export JSON backup. Restore replaces the shared records; first export the current records. Use backups from this online app (old offline snapshots use incompatible record IDs).
 - **Images:** JSON exports contain image links. Separately download uploaded files from Supabase Storage for a complete independent archive. Old replaced uploads are not automatically deleted; remove unused files deliberately when storage needs tidying.
 - **Free plan:** Supabase may pause after low activity. Resume the project from its dashboard and refresh the website. The app displays an unavailable message instead of pretending records were saved.
-- **Password recovery:** The Supabase project owner can manage the admin user through Authentication. Automatic recovery emails require configuring an appropriate mail sender and redirect URLs; no paid email service is required for the current password-login MVP.
+- **Password setup/recovery:** Use the link below the admin login, or open `reset.html`. Request a fresh email, open only its newest link, and choose a password privately. Supabase Auth Site URL must be the live website root, with its exact `reset.html` URL in the redirect allowlist. The root forwards recovery callbacks to that page. Supabase's default email service has recipient and sending limits; use the project-owner admin address for this initial setup. Configure an appropriate sender if other admins need recovery emails later.
 
 ## Maintaining with Codex
 

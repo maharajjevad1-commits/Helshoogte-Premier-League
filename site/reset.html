@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Admin password | Helshoogte Premier League</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap" style="padding-top:40px;max-width:580px">
+    <section class="panel">
+      <div class="eyebrow">HELSHOOGTE PREMIER LEAGUE</div>
+      <h1 id="heading">Set or reset your admin password</h1>
+      <p id="message" role="status">Request a fresh email link to choose your league website password.</p>
+      <form id="request-form">
+        <div class="field"><label for="email">Admin email</label><input id="email" name="email" type="email" autocomplete="username" required></div>
+        <div class="actions"><button class="btn primary" type="submit">Send password setup email</button></div>
+      </form>
+      <form id="password-form" hidden>
+        <div class="field"><label for="password">New league password (at least 12 characters)</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="12" required></div>
+        <div class="field"><label for="confirm">Confirm password</label><input id="confirm" name="confirm" type="password" autocomplete="new-password" minlength="12" required></div>
+        <div class="actions"><button class="btn primary" type="submit">Save new password</button></div>
+      </form>
+      <p><a href="./">Return to league website</a></p>
+      <p class="footnote">This password is for the league website. Keep it private. It is separate from your database, GitHub, and Supabase dashboard passwords.</p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.js"></script>
+  <script src="config.js"></script>
+  <script src="reset.js"></script>
+</body>
+</html>
